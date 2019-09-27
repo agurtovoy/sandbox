@@ -1,0 +1,61 @@
+<?xml version="1.0" ?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup Label="ProjectConfigurations">
+		<ProjectConfiguration Include="debug|x64">
+			<Configuration>debug</Configuration>
+			<Platform>x64</Platform>
+		</ProjectConfiguration>
+	</ItemGroup>
+	<PropertyGroup Label="Globals">
+		<ProjectGuid>{DF36C29C-E9F6-4057-A90C-3FBE84BA2F39}</ProjectGuid>
+		<Keyword>x64Proj</Keyword>
+		<Platform>x64</Platform>
+		<ProjectName>RUN_INSTALL</ProjectName>
+		<WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props"/>
+	<PropertyGroup Label="Configuration">
+		<ConfigurationType/>
+		<CharacterSet>MultiByte</CharacterSet>
+		<UseOfMfc>false</UseOfMfc>
+		<PlatformToolset>v141</PlatformToolset>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.props"/>
+	<PropertyGroup>
+		<_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+		<OutDir>.\</OutDir>
+		<IntDir>install-temp\</IntDir>
+		<TargetName>RUN_INSTALL</TargetName>
+	</PropertyGroup>
+	<ItemDefinitionGroup>
+		<Midl>
+			<AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<OutputDirectory>$(IntDir)</OutputDirectory>
+			<HeaderFileName>%(Filename).h</HeaderFileName>
+			<TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+			<InterfaceIdentifierFilename>%(Filename)_i.c</InterfaceIdentifierFilename>
+			<ProxyFileName>%(Filename)_p.c</ProxyFileName>
+		</Midl>
+	</ItemDefinitionGroup>
+	<ItemGroup>
+		<CustomBuild Include="C:\Users\vagrant\source\build_system_test\meson-dev\meson_master\meson\b 29a74103ec\meson-private\run_install.rule">
+			<Command>setlocal
+&quot;C:\Anaconda3\python.exe&quot; &quot;C:\Users\vagrant\source\build_system_test\meson-dev\meson_master\meson\meson.py&quot; &quot;install&quot; &quot;--no-rebuild&quot;
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+			<Outputs>C:\Users\vagrant\source\build_system_test\meson-dev\meson_master\meson\b 29a74103ec\meson-private\outofdate.file</Outputs>
+		</CustomBuild>
+	</ItemGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
+	<ItemGroup>
+		<ProjectReference Include="C:\Users\vagrant\source\build_system_test\meson-dev\meson_master\meson\b 29a74103ec\REGEN.vcxproj">
+			<Project>{DCFB7A84-7F99-428B-A978-15205FCF686C}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+</Project>

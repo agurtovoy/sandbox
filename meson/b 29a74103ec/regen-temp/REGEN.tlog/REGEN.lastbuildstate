@@ -1,0 +1,2 @@
+#TargetFrameworkVersion=v4.0:PlatformToolSet=v141:EnableManagedIncrementalBuild=false:VCToolArchitecture=Native32Bit:WindowsTargetPlatformVersion=10.0.17134.0
+debug|x64|C:\Users\vagrant\source\build_system_test\meson-dev\meson_master\meson\b 29a74103ec\|

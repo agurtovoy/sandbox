@@ -1,0 +1,78 @@
+<?xml version="1.0" ?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup Label="ProjectConfigurations">
+		<ProjectConfiguration Include="debug|x64">
+			<Configuration>debug</Configuration>
+			<Platform>x64</Platform>
+		</ProjectConfiguration>
+	</ItemGroup>
+	<PropertyGroup Label="Globals">
+		<ProjectGuid>{CA93304C-D491-44C9-9C1A-2AC779910E6D}</ProjectGuid>
+		<Keyword>x64Proj</Keyword>
+		<RootNamespace>prog</RootNamespace>
+		<Platform>x64</Platform>
+		<ProjectName>prog</ProjectName>
+		<WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props"/>
+	<PropertyGroup Label="Configuration">
+		<ConfigurationType>Application</ConfigurationType>
+		<CharacterSet>MultiByte</CharacterSet>
+		<PlatformToolset>v141</PlatformToolset>
+		<WholeProgramOptimization>false</WholeProgramOptimization>
+		<BasicRuntimeChecks>Default</BasicRuntimeChecks>
+		<UseDebugLibraries>true</UseDebugLibraries>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.props"/>
+	<ItemDefinitionGroup>
+		<ClCompile>
+			<RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+			<DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+			<BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+			<AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<FunctionLevelLinking>true</FunctionLevelLinking>
+			<WarningLevel>Level2</WarningLevel>
+			<Optimization>Disabled</Optimization>
+			<FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+			<PrecompiledHeader/>
+		</ClCompile>
+		<ResourceCompile>
+			<PreprocessorDefinitions/>
+		</ResourceCompile>
+		<Link>
+			<GenerateDebugInformation>DebugFull</GenerateDebugInformation>
+			<AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+			<OutputFile>$(OutDir)prog.exe</OutputFile>
+			<SubSystem>Console</SubSystem>
+			<ProgramDataBaseFileName>$(OutDir}prog.pdb</ProgramDataBaseFileName>
+			<EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+			<TargetMachine>MachineX64</TargetMachine>
+		</Link>
+	</ItemDefinitionGroup>
+	<PropertyGroup>
+		<_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+		<OutDir>.\</OutDir>
+		<IntDir>prog@exe\</IntDir>
+		<TargetName>prog</TargetName>
+		<TargetExt>.exe</TargetExt>
+	</PropertyGroup>
+	<ItemGroup>
+		<None Include="..\test cases\my\226 debuginfo\meson.build"/>
+	</ItemGroup>
+	<ItemGroup>
+		<CLCompile Include="..\test cases\my\226 debuginfo\prog.cpp">
+			<AdditionalOptions>&quot;/EHsc&quot; %(AdditionalOptions)</AdditionalOptions>
+			<PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>prog@exe;.;..\test cases\my\226 debuginfo\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<ObjectFileName>$(IntDir)prog.cpp.obj</ObjectFileName>
+		</CLCompile>
+	</ItemGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
+	<ItemGroup>
+		<ProjectReference Include="C:\Users\vagrant\source\build_system_test\meson-dev\meson_master\meson\b 29a74103ec\REGEN.vcxproj">
+			<Project>{DCFB7A84-7F99-428B-A978-15205FCF686C}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+</Project>

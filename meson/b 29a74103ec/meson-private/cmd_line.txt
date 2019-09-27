@@ -1,0 +1,7 @@
+[options]
+prefix = /usr
+libdir = lib
+backend = vs2017
+
+[properties]
+
