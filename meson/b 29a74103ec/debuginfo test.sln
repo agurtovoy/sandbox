@@ -1,24 +1,24 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2017
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "prog@exe", "prog@exe.vcxproj", "{CA93304C-D491-44C9-9C1A-2AC779910E6D}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "prog@exe", "prog@exe.vcxproj", "{198AB6C8-212F-4249-BE2E-44D43B57E492}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RUN_TESTS", "RUN_TESTS.vcxproj", "{7DC22637-9AAF-447D-B70E-6B2BCF82A409}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RUN_TESTS", "RUN_TESTS.vcxproj", "{3A3EFAD6-3967-4C2B-94C1-439C234A812A}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "REGEN", "REGEN.vcxproj", "{DCFB7A84-7F99-428B-A978-15205FCF686C}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "REGEN", "REGEN.vcxproj", "{13BB4767-C820-4F76-B4EA-83668CD9A4EA}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RUN_INSTALL", "RUN_INSTALL.vcxproj", "{DF36C29C-E9F6-4057-A90C-3FBE84BA2F39}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RUN_INSTALL", "RUN_INSTALL.vcxproj", "{DED548C9-5277-4949-AEA0-76D39B1985F2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		debug|x64 = debug|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{DCFB7A84-7F99-428B-A978-15205FCF686C}.debug|x64.ActiveCfg = debug|x64
-		{DCFB7A84-7F99-428B-A978-15205FCF686C}.debug|x64.Build.0 = debug|x64
-		{CA93304C-D491-44C9-9C1A-2AC779910E6D}.debug|x64.ActiveCfg = debug|x64
-		{CA93304C-D491-44C9-9C1A-2AC779910E6D}.debug|x64.Build.0 = debug|x64
-		{7DC22637-9AAF-447D-B70E-6B2BCF82A409}.debug|x64.ActiveCfg = debug|x64
-		{DF36C29C-E9F6-4057-A90C-3FBE84BA2F39}.debug|x64.ActiveCfg = debug|x64
+		{13BB4767-C820-4F76-B4EA-83668CD9A4EA}.debug|x64.ActiveCfg = debug|x64
+		{13BB4767-C820-4F76-B4EA-83668CD9A4EA}.debug|x64.Build.0 = debug|x64
+		{198AB6C8-212F-4249-BE2E-44D43B57E492}.debug|x64.ActiveCfg = debug|x64
+		{198AB6C8-212F-4249-BE2E-44D43B57E492}.debug|x64.Build.0 = debug|x64
+		{3A3EFAD6-3967-4C2B-94C1-439C234A812A}.debug|x64.ActiveCfg = debug|x64
+		{DED548C9-5277-4949-AEA0-76D39B1985F2}.debug|x64.ActiveCfg = debug|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

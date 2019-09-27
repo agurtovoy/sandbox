@@ -7,7 +7,7 @@
 		</ProjectConfiguration>
 	</ItemGroup>
 	<PropertyGroup Label="Globals">
-		<ProjectGuid>{DCFB7A84-7F99-428B-A978-15205FCF686C}</ProjectGuid>
+		<ProjectGuid>{13BB4767-C820-4F76-B4EA-83668CD9A4EA}</ProjectGuid>
 		<Keyword>x64Proj</Keyword>
 		<Platform>x64</Platform>
 		<ProjectName>REGEN</ProjectName>

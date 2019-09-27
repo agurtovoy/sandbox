@@ -7,7 +7,7 @@
 		</ProjectConfiguration>
 	</ItemGroup>
 	<PropertyGroup Label="Globals">
-		<ProjectGuid>{DF36C29C-E9F6-4057-A90C-3FBE84BA2F39}</ProjectGuid>
+		<ProjectGuid>{DED548C9-5277-4949-AEA0-76D39B1985F2}</ProjectGuid>
 		<Keyword>x64Proj</Keyword>
 		<Platform>x64</Platform>
 		<ProjectName>RUN_INSTALL</ProjectName>
@@ -54,7 +54,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
 	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
 	<ItemGroup>
 		<ProjectReference Include="C:\Users\vagrant\source\build_system_test\meson-dev\meson_master\meson\b 29a74103ec\REGEN.vcxproj">
-			<Project>{DCFB7A84-7F99-428B-A978-15205FCF686C}</Project>
+			<Project>{13BB4767-C820-4F76-B4EA-83668CD9A4EA}</Project>
 			<LinkLibraryDependencies>false</LinkLibraryDependencies>
 		</ProjectReference>
 	</ItemGroup>
